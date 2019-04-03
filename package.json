@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "medium-json-feed": "0.0.3",
+    "rss-to-json": "^1.0.4",
     "vue": "^2.6.6",
     "vue-router": "^3.0.2"
   },

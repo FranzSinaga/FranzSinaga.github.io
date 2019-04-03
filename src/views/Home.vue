@@ -9,27 +9,51 @@
             </section>
         </div>
         <div style="background-color: azure">
-        <div class="canhide container">
-            <div class="row" id="about">
-                <div class="col-md-10 offset-md-1">
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <h1 style="letter-spacing: 10px;text-align: right">ABOUT<br> ME</h1>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-5" style="text-align: left; font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="canhide container">
+                <div class="row" id="about">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <h1 class="text-md-right " style="letter-spacing: 10px;">ABOUT<br> ME</h1>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-5 text-break" style="text-align: left; font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+<!--            <div v-for="article in articles.items" :key="article.id">-->
+<!--                <Article :article="article" />-->
+<!--            </div>-->
         </div>
     </div>
 </template>
 <script>
+    import Article from '@/components/Article.vue'
+    import Axios from 'axios'
+    // import Article from "../components/Article";
     export default {
         name: "Home",
+        components: {Article},
+        mounted(){
+            this.getArticles();
+        },
+        data(){
+            return{
+                articles: {}
+            }
+        },
+        methods: {
+            getArticles(){
+                Axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sinagafranz12')
+                    .then(response => {
+                        console.log(response)
+                        this.articles = response.data
+                    })
 
+            }
+        }
     }
 </script>
 
