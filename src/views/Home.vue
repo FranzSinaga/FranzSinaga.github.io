@@ -23,30 +23,46 @@
                 <div class="row" id="about">
                     <div class="col-md-10 offset-md-1">
                         <div class="row mt-4">
-                            <div class="col-md-4">
-                                <h1 class="text-md-right " style="letter-spacing: 10px;">ABOUT<br> ME</h1>
+                            <div class="col-md-3">
+                                <h1 class="text-md-right " style="letter-spacing: 10px;">About<br> Me</h1>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-5 text-break" style="text-align: left; font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="col-md-7">
+                                <div class="mb-5 text-break" style="text-align: left; font-size: 25px">
+                                    Hello There,<br>
+                                    <div style="margin-top: 10px">
+                                        Introducing, My name is Franz Aditya Natanael Sinaga. I am a student at the Del Institute of Technology.
+                                        I am happy to learn new things about technology, especially in the field of software engineer
+                                        I like writing code. I wrote the code for my study and directed myself to work in the IT world according to my interests.
+                                        I like to work with other people to get things done. If you love to share something to me, feel free to reach me.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mx-auto" style="width:100%; max-width:700px;">
-                <h4 class="text-left" style="font-weight: bold">Latest Blog : </h4>
-            </div>
 
-            <div v-for="article in articles.items.slice(0,2)" :key="article.id">
-               <Article :article="article" />
+            <div class="row" id="blog">
+                <div class="col-md-10 offset-md-1">
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <h1 class="text-md-right " style="letter-spacing: 10px;">Latest<br> Blog</h1>
+                        </div>
+                        <div class="col-md-7">
+                            <div v-for="article in articles.items.slice(0,2)" :key="article.id">
+                                <Article :article="article" />
+                            </div>
+                            <div class=" canhide">
+                                <a target="_blank" href="https://medium.com/@sinagafranz12" class="btn btn-lg btn-outline-success btn-block" style="padding: 6.375px;">
+                                    <i class="fab fa-medium-m"></i> Look More At Medium
+                                </a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-6 offset-md-3 canhide">
-                <a target="_blank" href="https://medium.com/@sinagafranz12" class="btn btn-lg btn-outline-success btn-block" style="padding: 6.375px;">
-                    <i class="fab fa-medium-m"></i> Look More At Medium
-                </a>
-                <br>
-            </div>
+        </div>
         </div>
     </div>
 </template>

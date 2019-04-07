@@ -1,4 +1,4 @@
-# portfolio
+# Franz Portfolio
 
 ## Project setup
 ```
