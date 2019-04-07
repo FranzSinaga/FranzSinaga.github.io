@@ -12,10 +12,10 @@
         <!-- markup for the overlay -->
         <nav class="overlay" id="overlay">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="/">resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -111,8 +111,11 @@
     /** styling for the overlay. The sliding-down effect of the overlay is given by the initial zero height and the onclick 100% height. **/
     .overlay {
         position: fixed;
-        /*background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);*/
-        background-color: black;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        /*opacity: ;*/
         top: 0;
         left: 0;
         width: 100%;

@@ -3,7 +3,17 @@
         <div class="containerss">
             <h1 class="canhide welcomeTextPosition h1-special family-VT">
                 FRANZ SINAGA<hr color="white" >{Software Engineer}<br>
+                <div style="margin-top: 20px;">
+
+                    <a href="mailto:sinagafranz12@gmail.com" style="color: aliceblue;margin-right: 10px;"><i class="fas fa-envelope"></i></a>
+                    <a href="https://medium.com/@sinagafranz12" style="color: aliceblue;margin-right: 10px;"><i class="fab fa-medium"></i></a>
+                    <a href="https://github.com/FranzSinaga " style="color: aliceblue;margin-right: 10px;"><i class="fab fa-github"></i></a>
+                    <a href="https://gitlab.com/WzeT?nav_source=navbar" style="color: aliceblue;margin-right: 10px;"><i class="fab fa-gitlab"></i></a>
+                    <a href="https://www.linkedin.com/in/franz-sinaga-4b39b9162/" style="color: aliceblue;margin-right: 10px;"><i class="fab fa-linkedin"></i></a>
+                </div>
+
             </h1>
+
             <section class="demo canhide">
                 <a href="#about"><span></span></a>
             </section>
@@ -17,15 +27,26 @@
                                 <h1 class="text-md-right " style="letter-spacing: 10px;">ABOUT<br> ME</h1>
                             </div>
                             <div class="col-md-6">
-                                <p class="mb-5 text-break" style="text-align: left; font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="mb-5 text-break" style="text-align: left; font-size: 25px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-<!--            <div v-for="article in articles.items" :key="article.id">-->
-<!--                <Article :article="article" />-->
-<!--            </div>-->
+            <div class="mx-auto" style="width:100%; max-width:700px;">
+                <h4 class="text-left" style="font-weight: bold">Latest Blog : </h4>
+            </div>
+
+            <div v-for="article in articles.items.slice(0,2)" :key="article.id">
+               <Article :article="article" />
+            </div>
+
+            <div class="col-md-6 offset-md-3 canhide">
+                <a target="_blank" href="https://medium.com/@sinagafranz12" class="btn btn-lg btn-outline-success btn-block" style="padding: 6.375px;">
+                    <i class="fab fa-medium-m"></i> Look More At Medium
+                </a>
+                <br>
+            </div>
         </div>
     </div>
 </template>
@@ -51,7 +72,6 @@
                         console.log(response)
                         this.articles = response.data
                     })
-
             }
         }
     }
@@ -73,6 +93,14 @@
         left: 50%;
         /*font-size: 2.5em;*/
         color: white;
+    }
+    .position-logo{
+        padding-top: 30%;
+    }
+    @media only screen and (max-width: 600px) {
+        .position-logo{
+
+        }
     }
     .explore-me-text{
         position: absolute;
