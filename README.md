@@ -1,4 +1,7 @@
-# Franz Portfolio
+# Portfolio
+
+This portfolio build with Vue.js this is how to install this project.<br>
+The result can see in [franzsinaga.github.io/portfolio/](https://franzsinaga.github.io/portfolio/).
 
 ## Project setup
 ```
