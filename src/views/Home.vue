@@ -49,7 +49,7 @@
                             <h1 class="text-md-right " style="letter-spacing: 10px;">Latest<br> Blog</h1>
                         </div>
                         <div class="col-md-7">
-                            <div v-for="article in articles.items.slice(0,2)" :key="article.id">
+                            <div v-for="article in articles.items" :key="article.id">
                                 <Article :article="article" />
                             </div>
                             <div class=" canhide">
