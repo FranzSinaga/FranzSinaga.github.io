@@ -2,7 +2,6 @@
     <div style="background-color: azure">
         <div class="canhide container" id="blog">
             <div class="mx-auto" style="width:100%; max-width:700px;">
-
                 <div class="card" style="margin-bottom: 10px;">
                     <a :href="article.link" class="none">
                         <div class="card-body">

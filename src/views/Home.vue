@@ -4,7 +4,6 @@
             <h1 class="canhide welcomeTextPosition h1-special family-VT">
                 FRANZ SINAGA<hr color="white" >{Software Engineer}<br>
                 <div style="margin-top: 20px;">
-
                     <a href="mailto:sinagafranz12@gmail.com" style="color: aliceblue;margin-right: 10px;"><i class="fas fa-envelope"></i></a>
                     <a href="https://medium.com/@sinagafranz12" style="color: aliceblue;margin-right: 10px;"><i class="fab fa-medium"></i></a>
                     <a href="https://github.com/FranzSinaga " style="color: aliceblue;margin-right: 10px;"><i class="fab fa-github"></i></a>
