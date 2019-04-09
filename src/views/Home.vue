@@ -49,7 +49,7 @@
                             <h1 class="text-md-right " style="letter-spacing: 10px;">Latest<br> Blog</h1>
                         </div>
                         <div class="col-md-7">
-                            <div v-for="article in articles.items" :key="article.id">
+                            <div v-for="article in articles.items.slice(0,2)" :key="article.id">
                                 <Article :article="article" />
                             </div>
                             <div class=" canhide">
@@ -63,13 +63,11 @@
                 </div>
             </div>
         </div>
-        </div>
     </div>
 </template>
 <script>
     import Article from '@/components/Article.vue'
     import Axios from 'axios'
-    // import Article from "../components/Article";
     export default {
         name: "Home",
         components: {Article},
@@ -85,7 +83,6 @@
             getArticles(){
                 Axios.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sinagafranz12')
                     .then(response => {
-                        console.log(response)
                         this.articles = response.data
                     })
             }
