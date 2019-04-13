@@ -31,7 +31,13 @@
         height: auto;
         max-height: 300px;
     }
-    p{
+    /*p{*/
+    /*    display: none;*/
+    /*}*/
+    figure img{
+        display: block;
+    }
+    img{
         display: none;
     }
     .card-title{
