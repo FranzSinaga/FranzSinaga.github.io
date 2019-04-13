@@ -3,7 +3,7 @@
         <div class="container">
             <div  class="left-text">
                 <h2 class="resume mt-5">Like what you see?</h2>
-                <h2 class="resume mt-3">View my <a href="https://drive.google.com/open?id=11XMhaOVMod4Mm0KaXdZyBhqZQX37iX5Y" target="_blank">resume</a>, follow me or contact me</h2>
+                <h2 class="resume mt-3">View my <a href="https://drive.google.com/open?id=1Gf-KAC-yYudvdu_ZzZsqwOIB_L_I2gMI" target="_blank">resume</a>, follow me or contact me</h2>
                 <div class="social mt-5">
                     <a class="social" href="mailto:sinagafranz12@gmail.com" style="margin-right: 20px;"><i class="fas fa-2x fa-envelope"></i></a>
                     <a class="social" href="https://medium.com/@sinagafranz12" style="margin-right: 20px;"><i class="fab fa-2x fa-medium-m"></i></a>
